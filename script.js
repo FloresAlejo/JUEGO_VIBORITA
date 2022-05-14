@@ -31,7 +31,8 @@ const createBoard = () =>{
     boardSquares.forEach((row, rowIndex) => {
         row.forEach ( (column, columnindex) => {
             const squareValue = `${rowIndex}${columnindex}`;
-    });
+        })
+    })
 }
 
 const setGame = () => {
