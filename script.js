@@ -31,6 +31,10 @@ const createBoard = () =>{
     boardSquares.forEach((row, rowIndex) => {
         row.forEach ( (column, columnindex) => {
             const squareValue = `${rowIndex}${columnindex}`;
+            const squareElement = document.createElement('div');
+            squareElement.setAttribute('class', 'square emptySquare');
+            squareElement.setAttribute('id',squareValue);
+            emptySquares.push(squareValue);
         })
     })
 }
